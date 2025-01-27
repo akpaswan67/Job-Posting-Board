@@ -11,7 +11,7 @@ require("dotenv").config();
 const app = express();
 connectDB();
 
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
+app.use(cors({ credentials: true, origin: 'https://job-posting-board-1-cjo2.onrender.com' }));
 app.use(express.json());
 app.use(cookieParser());
 
