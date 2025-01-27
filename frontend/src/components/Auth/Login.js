@@ -9,7 +9,7 @@ function Login() {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/login", data, { withCredentials: true });
+      const response = await axios.post("https://job-posting-board-hnck.onrender.com//api/auth/login", data, { withCredentials: true });
       alert("Login successful!");
       navigate("/dashboard"); // Navigate to the dashboard route after login
     } catch (error) {
