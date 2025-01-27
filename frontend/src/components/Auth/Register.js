@@ -20,7 +20,7 @@ function Register() {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/register", data);
+      const response = await axios.post("https://job-posting-board-hnck.onrender.com/api/auth/register", data);
       console.log(response);
       alert("Registration successful! Please verify your email.");
       navigate("/dashboard"); // Redirect to login page after successful registration
