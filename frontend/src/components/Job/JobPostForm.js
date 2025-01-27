@@ -66,7 +66,7 @@ function JobPostForm() {
     try {
       await axios.post("https://job-posting-board-hnck.onrender.com/api/auth/logout", {}, { withCredentials: true });
       alert("You have logged out successfully.");
-      window.location.href = "/login"; 
+      window.location.href = "/"; 
     } catch (error) {
       console.error("Logout error:", error);
       alert("Error logging out.");
