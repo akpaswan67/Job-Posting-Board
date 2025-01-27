@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f9f9f9;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .job-post-form-container {
+	position: relative; /* Container for positioning the logout button */
+  }
+  
+  form {
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	max-width: 400px;
+	margin: 40px auto;
+  }
+  
+  h1 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	text-align: center;
+  }
+  
+  input,
+  textarea,
+  select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 14px;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+	outline: none;
+	border-color: #007bff;
+	box-shadow: 0 0 3px #007bff;
+  }
+  
+  button {
+	background-color: #007bff;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+	font-size: 16px;
+  }
+  
+  button:hover {
+	/* background-color: #0056b3; */
+  }
+  
+  .candidates-list {
+	list-style: none;
+	padding: 0;
+  }
+  
+  .candidates-list li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 8px;
+  }
+  
+  .candidates-list button {
+	background-color: transparent;
+	color: #ff4d4d;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .candidates-list button:hover {
+	text-decoration: underline;
+  }
+  
+  .error-message {
+	color: red;
+	font-size: 12px;
+  }
+  
+  /* Logout Button Styles */
+  .logout-button {
+	position: absolute;
+	top: -40px;
+	/* right: 20px; */
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #333;
+	font-size: 16px;
+  }
+  
+  .logout-button:hover {
+	color: #f44336; /* Red color on hover */
+  }
+  
+  .logout-button svg {
+	margin-right: 8px; /* Adds spacing between the icon and text */
+  }
+  
