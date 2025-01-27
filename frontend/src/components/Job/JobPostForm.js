@@ -45,7 +45,7 @@ function JobPostForm() {
     try {
       // console.log(jobDetails);
       const response = await axios.post(
-        "http://localhost:5000/api/jobs", // Replace with your backend endpoint
+        "https://job-posting-board-hnck.onrender.com/api/jobs", // Replace with your backend endpoint
         {
           ...jobDetails,
           candidates,
@@ -64,7 +64,7 @@ function JobPostForm() {
   // Handle logout
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:5000/api/auth/logout", {}, { withCredentials: true });
+      await axios.post("https://job-posting-board-hnck.onrender.com/api/auth/logout", {}, { withCredentials: true });
       alert("You have logged out successfully.");
       window.location.href = "/login"; 
     } catch (error) {
